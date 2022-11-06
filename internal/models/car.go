@@ -11,7 +11,7 @@ type Car struct {
 }
 
 func (c *Car) GetName() string {
-	return fmt.Sprintf("%s - %s", c.Brand, c.Model)
+	return fmt.Sprintf("%s - %s - %d", c.Brand, c.Model, c.Year)
 }
 
 func (c *Car) GetID() string {

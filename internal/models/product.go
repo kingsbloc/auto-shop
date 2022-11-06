@@ -2,9 +2,9 @@ package models
 
 import "fmt"
 
-type Item interface {
+type ProductItem interface {
 	GetID() string
-	Name() string
+	GetName() string
 	GetDetails() string
 }
 
@@ -12,7 +12,7 @@ type Product struct {
 	ID       string
 	Price    float64
 	Quantity int64
-	Item     Item
+	Item     ProductItem
 }
 
 func (p *Product) Details() string {
